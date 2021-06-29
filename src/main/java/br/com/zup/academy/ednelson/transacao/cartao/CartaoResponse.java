@@ -17,6 +17,11 @@ public class CartaoResponse {
 		this.email = email;
 	}
 
+	public CartaoResponse(Cartao cartao) {
+		this.id = cartao.getUuid();
+		this.email = cartao.getEmail();
+	}
+
 	public String getId() {
 		return id;
 	}

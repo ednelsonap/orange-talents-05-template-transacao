@@ -26,6 +26,11 @@ public class Transacao {
 	private Cartao cartao;
 	private LocalDateTime efetivadaEm;
 	
+	@Deprecated
+	public Transacao() {
+		
+	}
+	
 	public Transacao(String uuid, BigDecimal valor, Estabelecimento estabelecimento, Cartao cartao,
 			LocalDateTime efetivadaEm) {
 		this.uuid = uuid;
